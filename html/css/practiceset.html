@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>html practice cet</title>
+
+
+    <!-- there is internal css in head -->
+    <!-- importing font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- extrnal css -->
+    <link rel="stylesheet" href="practiceset.css" />
+    <style>
+      /* internal css */
+
+      .abc {
+        color: blue;
+      }
+
+       /* box model */
+    .container{
+background-color: aqua;
+height: 200px;
+width: 600px;
+padding: 10px 10px;
+margin: 10px 10px;
+border: 2px solid green;
+border-radius: 10px;
+    };
+
+    /* styling for buttons */
+    .btn{
+      padding: 6px;
+      background-color: crimson;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+    }
+a{
+  text-decoration: none;
+  background-color: crimson;
+  padding: 6px;
+  border-radius: 5px;
+}
+a:hover{
+ background-color: yellow;
+ 
+}
+
+    </style>
+  </head>
+
+
+  <!-- here is html work -->
+  <body>
+    
+    <!-- heading -->
+    <h1>headings</h1>
+
+    <!-- inline css -->
+    <p style="color: red">Lorem ipsum dolor sit.</p>
+
+    <!-- linkto browser or new page -->
+    <a href="google.com" target="_blank">go to google</a>
+    <br />
+
+    <!-- for image -->
+    <img
+      src="https://www.istockphoto.com/photo/i-am-a-strong-woman-gm614012698-106094719?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-images&utm_medium=affiliate&utm_source=unsplash&utm_term=free+images%3A%3A%3A"
+      alt="GIRL STANDING AGAINST BOARD"
+    />
+
+    <!-- lists in html -->
+    <ul>
+      <li>home</li>
+      <li>services</li>
+      <li>about us</li>
+      <li>contact us</li>
+    </ul>
+
+    <!-- tables in html -->
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>marks</th>
+          <th>percentsge</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>zaid</td>
+          <td>86</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+    </table>
+
+<!-- form in html -->
+    <h2>fill the form</h2>
+    <form action="php.backend"></form>
+
+    name:<input type="text" name="name" id="" /><br />
+    email:<input type="text" name="eamil" id="" /><br />
+    date: <input type="datetime" name="date" id="" /><br />
+    eligibility:<input type="checkbox" name="eligiblir" id="" /><br />
+    <input type="submit" value="submit now" />
+
+    <!-- semantic elements  + ids + claases -->
+    <header>qqqq</header>
+    <nav id="navabbr"></nav>
+    <section class="abc">
+      <details>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id
+        exercitationem animi obcaecati a laboriosam recusandae fugiat at sint,
+        similique quod assumenda delectus accusamus labore est nemo quas
+        incidunt illo libero, fugit voluptatibus distinctio.
+      </details>
+      <summary id="qq">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </summary>
+    </section>
+    <aside></aside>
+    <footer></footer>
+
+<div class="container">
+    <p id="eee">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestiae.
+    </p>
+    <p id="cnn">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rem
+      ullam molestias perspiciatis qui libero error iste in quae quasi.
+    </p>
+    <a href="" class="btn">readmore</a>
+    <button class="btn">contactus</button>
+  </div>
+  </body>
+</html>

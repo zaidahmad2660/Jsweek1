@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+    .qwer{
+        border: 2px solid red;
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+       
+    }
+.abc{
+border: 2px solid black;
+height: 600px;
+};
+
+#s{
+    /* relative to its own orignal postion */
+    position: relative;
+    /* position: absolute; */
+    /* relative to parent */
+    top: 34px;
+    left: 34px;
+};
+#wee{
+    /* used for messages box etc */
+    position: fixed;
+   right: 4px;
+};
+#a{
+    /* stick on top used in navabar etc */
+    position: sticky;
+   top: 4px;
+};
+
+
+
+</style>
+<body>
+    <div class="abc">
+   
+        <box class="qwer" id="s">b0x1</box>
+        <box class="qwer">box2</box>
+        <box  class="qwer" id="a">box3 </box>
+        <box  class="qwer" id="wee">box4</box>
+    </div>
+</body>
+</html>

@@ -73,7 +73,7 @@ console.log(arr);
 const myFunction = (a,b) =>{console.log("the result is",a+b)};
 myFunction(3,2);
 
-lo
+
 
 
 
