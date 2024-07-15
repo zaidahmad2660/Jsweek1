@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* body{
+background-color: black;
+    } */
+    .container {
+      display: grid;
+      background-color: aqua;
+      grid-gap: 1rem;
+      grid-template-areas:
+      'navbar navbar navbar navbar' 
+      'section section section aside'
+      'footer footer footer footer'
+      ;
+    }
+    .item {
+      border: 2px solid black;
+      background-color: crimson;
+    }
+    #navbar{
+        grid-area: navbar;
+        background-color: black;
+        
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    #footer{
+        grid-area: footer;
+    }
+    li{
+        list-style: none;
+        text-decoration: none;
+        display: inline;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+
+    }
+    input[type='text']{
+        float: right;
+       margin-bottom: 20px;
+       border-radius: 10px;
+       
+    }
+    
+  </style>
+  <body>
+    <div class="container">
+      <nav class="item" id="navbar">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>CONTACTUS</li>
+            <li>SERVICES</li>
+        </ul>
+        <input type="text" placeholder="search bar">
+      </nav>
+      <section class="item" id="section">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque
+        illum ut nam magnam quam libero explicabo fugit, asperiores dolores in
+        veniam. Quos, laborum! Rem hic repellat unde illum iste vel eius alias,
+        perferendis adipisci deserunt dolorem culpa, pariatur delectus
+        consequuntur blanditiis reprehenderit at obcaecati impedit? Voluptas sit
+        totam praesentium amet hic! Soluta, molestias quae pariatur nulla
+        inventore dicta ex neque facere reiciendis rem odit modi tenetur
+     
+      </section>
+      <aside class="item" id="aside">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum velit,
+        debitis, possimus blanditiis sapiente quasi in id amet eveniet quas
+        consectetur earum dolorum officia numquam quod autem? Quod voluptatem
+        reprehenderit impedit inventore et itaque eum omnis, illum ut
+        accusantium maiores sunt aspernatur vel reiciendis molestiae blanditiis,
+        alias saepe eos! Dolorum voluptas quod magni fugit rem asperiores sequi
+        distinctio consequatur, iusto enim fuga porro eius quis voluptatem nemo?
+        Vel ullam beatae unde voluptas! Dolor necessitatibus error quasi
+        repellendus esse quibusdam non nihil, iusto quidem quos laborum dicta,
+        eius, accusamus molestias autem nesciunt laudantium reprehenderit
+       
+      </aside>
+      <footer class="item" id="footer">Lorem ipsum dolor sit.</footer>
+    </div>
+  </body>
+</html>

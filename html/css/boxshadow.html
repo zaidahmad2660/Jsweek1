@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxshadow</title>
+</head>
+<style>
+    /* globally accessibale */
+    :root{
+        --primary-color:blue;
+        --danger-color:red;
+        --maxw:700px;
+    }
+    .container{
+        display: flex;
+    }
+    .box{
+        border: 2px solid var(--primary-color);
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+
+    }
+    #box1{
+        /* x axsis y axsis */
+        box-shadow: 10px 10px var(--danger-color);
+    }
+    #box2{
+        box-shadow: -10px -10px rgb(13, 255, 0);
+    }
+    #box3{
+        /* x axsis y axsis  blur radius spread radisus */
+        box-shadow: -10px -10px 15px  blue ;
+        text-shadow: 3px 3px rgba(34, 0, 255,0.3);
+    }
+    #box4{
+       box-shadow: inset 10px 10px blue;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <h1>this is heading</h1>
+        </div>
+        
+        <div class="box" id="box2">
+            <h1>this is heading</h1>
+        </div>
+        
+        <div class="box" id="box3">
+            <h1>this is heading</h1>
+        </div>
+        <div class="box" id="box4">
+            <h1>this is heading</h1>
+        </div>
+        
+    </div>
+</body>
+</html>
